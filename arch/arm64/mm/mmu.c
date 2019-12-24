@@ -46,6 +46,7 @@
  * Empty_zero_page is a special page that is used for zero-initialized data
  * and COW.
  */
+static pmdval_t prot_sect_kernel;
 struct page *empty_zero_page;
 EXPORT_SYMBOL(empty_zero_page);
 
