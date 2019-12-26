@@ -48,7 +48,7 @@
 #endif
 
 #else
-#include "../../../../arch/arm/mach-qcom/asm/scm.h"
+#include <asm-generic/scm.h>
 #endif
 
 #define SCM_SVC_MOBICORE		250
