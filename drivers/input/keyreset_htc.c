@@ -90,7 +90,7 @@ static int keyreset_parse_dt(struct device_node *dt,
 		KEY_LOGI("DT:%s num_keys=%d\n", parser_st[1], num_keys);
 	}
 
-	pdata->keys_down = kzalloc(num_keys * sizeof(uint32_t), GFP_KERNEL);
+	*pdata->keys_down = kzalloc(num_keys * sizeof(uint32_t), GFP_KERNEL);
 	if (!pdata->keys_down) {
 		KEY_LOGE("DT:%s fail to allocate memory\n", parser_st[1]);
 		ret = -ENOMEM;
